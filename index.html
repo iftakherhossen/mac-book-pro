@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Mac Book Pro</title>
 </head>
+
 <body>
-    
+
     <main class="container">
         <section class="row">
             <section class="col-12 col-md-12 col-lg-5">
@@ -23,23 +26,27 @@
                 <div class="m-5">
                     <div>
                         <h2>Customize you Blue 24-inch iMac with M1 chip.</h2>
-                        <small>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory, 256GB SSD storage, Two THunderbolt / USB 4 ports, Magic Mouse, Magic Keyboard - US English</small>
+                        <small>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core
+                            GPU, and 16-core Neural Engine 8GB unified memory, 256GB SSD storage, Two THunderbolt / USB
+                            4 ports, Magic Mouse, Magic Keyboard - US English</small>
                     </div>
                     <div class="my-4">
                         <h6 class="fw-bold">Memory</h6>
-                        <button class="btn border border-3 border-dark custom-font">8GB unified memory</button>
-                        <button class="btn border border-3 border-dark custom-font">16GB unified memory</button>
+                        <button id="memory-one" class="btn border border-3 border-dark custom-font active">8GB unified memory</button>
+                        <button id="memory-two" class="btn border border-3 border-dark custom-font">16GB unified memory</button>
                     </div>
                     <div class="my-4">
                         <h6 class="fw-bold">Storage</h6>
-                        <button class="btn border border-3 border-dark custom-font">256GB SSD storage</button>
-                        <button class="btn border border-3 border-dark custom-font">512GB SSD storage</button>
-                        <button class="btn border border-3 border-dark custom-font">1TB SSD storage</button>                    
+                        <button id="storage-one" class="btn border border-3 border-dark custom-font">256GB SSD storage</button>
+                        <button id="storage-two" class="btn border border-3 border-dark custom-font">512GB SSD storage</button>
+                        <button id="storage-three" class="btn border border-3 border-dark custom-font">1TB SSD storage</button>
                     </div>
                     <div class="my-4">
                         <h6 class="fw-bold">Choose your delivery option</h6>
-                        <button class="btn border border-3 border-dark custom-font">Tuesday, Aug 25 FREE Prime Delivery</button>
-                        <button class="btn border border-3 border-dark custom-font">Friday, Aug 21 FREE Prime Delivery</button>
+                        <button id="free-delivery" class="btn border border-3 border-dark custom-font">Tuesday, Aug 25 FREE Prime
+                            Delivery</button>
+                        <button id="delivery-charge" class="btn border border-3 border-dark custom-font">Friday, Aug 21
+                            Delivery Charge $20</button>
                     </div>
                     <div class="my-5 me-5">
                         <div class="d-flex my-2 fw-bold">
@@ -48,33 +55,33 @@
                         </div>
                         <div class="d-flex my-2 fw-bold">
                             <div class="custom-width mx-2">Extra Memory Cost</div>
-                            <div>$ <span id="">0</span></div>
+                            <div>$ <span id="memory-cost">0</span></div>
                         </div>
                         <div class="d-flex my-2 fw-bold">
                             <div class="custom-width mx-2">Extra Storage Cost</div>
-                            <div>$ <span id="">0</span></div>
+                            <div>$ <span id="storage-cost">0</span></div>
                         </div>
                         <div class="d-flex my-2 fw-bold">
                             <div class="custom-width mx-2">Delivery Charge</div>
-                            <div>$ <span id="">0</span></div>
+                            <div>$ <span id="delivery-cost">0</span></div>
                         </div>
                         <div class="d-flex my-2 custom-border fw-bold pt-1">
                             <div class="custom-width mx-2">Total Price</div>
-                            <div>$ <span id="">1290</span></div>
+                            <div>$ <span id="total-price">1290</span></div>
                         </div>
                         <div class="input-group my-4">
                             <input type="text" class="form-control" placeholder="Apply Promo Code">
                             <button class="btn btn-success">Apply</button>
                         </div>
                     </div>
-                </div> 
+                </div>
             </section>
             <hr>
             <div class="my-2 mb-4 text-center">
                 <h3>Total: $ <span id="">1290</span></h3>
             </div>
         </section>
-        
+
     </main>
 
 
@@ -82,7 +89,10 @@
     <!-- Custom JS Link -->
     <script src="script.js"></script>
     <!-- Bootstrap JS Bundle Link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
