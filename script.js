@@ -1,3 +1,4 @@
+// function for getting the input of products
 function priceVariant(productSelector, priceSelector, price) {
     document.getElementById(productSelector).addEventListener('click', function () {
         document.getElementById(priceSelector).innerText = price;
@@ -7,6 +8,7 @@ function priceVariant(productSelector, priceSelector, price) {
     });
 }
 
+// function for calculate the total price
 function totalPriceCalculate() {
     let priceSelector = document.getElementsByClassName('price');
     let sum = 0;
@@ -22,6 +24,7 @@ function totalPriceCalculate() {
     document.getElementById('final-price').innerText = sum;
 }
 
+// function for coupon price
 function couponPriceTotal() {
     const couponCode = 'stevekaku';
 
