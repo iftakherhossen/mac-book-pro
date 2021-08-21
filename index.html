@@ -18,12 +18,12 @@
     <main class="container">
         <section class="row">
             <section class="col-12 col-md-12 col-lg-5">
-                <div class="image">
-                    <img src="image/mac.png" alt="Mac Book" class="w-75 m-5">
+                <div class="image  my-3 my-md-5">
+                    <img src="image/mac.png" alt="Mac Book" class="w-100 pt-2">
                 </div>
             </section>
             <section class="col-12 col-md-12 col-lg-7">
-                <div class="m-5">
+                <div class="mt-md-5 ps-md-5">
                     <div>
                         <h2>Customize you Blue 24-inch iMac with M1 chip.</h2>
                         <small>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core
@@ -32,53 +32,62 @@
                     </div>
                     <div class="my-4">
                         <h6 class="fw-bold">Memory</h6>
-                        <button id="memory-one" class="btn border border-3 border-dark custom-font active">8GB unified memory</button>
-                        <button id="memory-two" class="btn border border-3 border-dark custom-font">16GB unified memory</button>
+                        <button id="memory-one" class="btn border border-3 border-dark custom-font my-1">8GB unified
+                            memory</button>
+                        <button id="memory-two" class="btn border border-3 border-dark custom-font my-1">16GB unified
+                            memory</button>
                     </div>
                     <div class="my-4">
                         <h6 class="fw-bold">Storage</h6>
-                        <button id="storage-one" class="btn border border-3 border-dark custom-font">256GB SSD storage</button>
-                        <button id="storage-two" class="btn border border-3 border-dark custom-font">512GB SSD storage</button>
-                        <button id="storage-three" class="btn border border-3 border-dark custom-font">1TB SSD storage</button>
+                        <button id="storage-one" class="btn border border-3 border-dark custom-font my-1">256GB SSD
+                            storage</button>
+                        <button id="storage-two" class="btn border border-3 border-dark custom-font my-1">512GB SSD
+                            storage</button>
+                        <button id="storage-three" class="btn border border-3 border-dark custom-font my-1">1TB SSD
+                            storage</button>
                     </div>
                     <div class="my-4">
                         <h6 class="fw-bold">Choose your delivery option</h6>
-                        <button id="free-delivery" class="btn border border-3 border-dark custom-font">Tuesday, Aug 25 FREE Prime
+                        <button id="free-delivery" class="btn border border-3 border-dark custom-font my-1">Tuesday, Aug
+                            25 FREE Prime
                             Delivery</button>
-                        <button id="delivery-charge" class="btn border border-3 border-dark custom-font">Friday, Aug 21
+                        <button id="delivery-charge" class="btn border border-3 border-dark custom-font my-1">Friday,
+                            Aug 21
                             Delivery Charge $20</button>
                     </div>
-                    <div class="my-5 me-5">
+                    <div class="my-5">
                         <div class="d-flex my-2 fw-bold">
                             <div class="custom-width mx-2">Best Price</div>
-                            <div>$ <span id="">1290</span></div>
+                            <div class="custom-width-alt mx-2">$ <span id="" class="price">1290</span></div>
                         </div>
                         <div class="d-flex my-2 fw-bold">
                             <div class="custom-width mx-2">Extra Memory Cost</div>
-                            <div>$ <span id="memory-cost">0</span></div>
+                            <div class="custom-width-alt mx-2">$ <span id="memory-cost" class="price">0</span></div>
                         </div>
                         <div class="d-flex my-2 fw-bold">
                             <div class="custom-width mx-2">Extra Storage Cost</div>
-                            <div>$ <span id="storage-cost">0</span></div>
+                            <div class="custom-width-alt mx-2">$ <span id="storage-cost" class="price">0</span></div>
                         </div>
                         <div class="d-flex my-2 fw-bold">
                             <div class="custom-width mx-2">Delivery Charge</div>
-                            <div>$ <span id="delivery-cost">0</span></div>
+                            <div class="custom-width-alt mx-2">$ <span id="delivery-cost" class="price">0</span></div>
                         </div>
-                        <div class="d-flex my-2 custom-border fw-bold pt-1">
+                        <div class="custom-border"></div>
+                        <div class="d-flex my-2 fw-bold">
                             <div class="custom-width mx-2">Total Price</div>
-                            <div>$ <span id="total-price">1290</span></div>
+                            <div class="custom-width-alt mx-2">$ <span id="total-price">1290</span></div>
                         </div>
                         <div class="input-group my-4">
-                            <input type="text" class="form-control" placeholder="Apply Promo Code">
-                            <button class="btn btn-success">Apply</button>
+                            <input type="text" id="promo-code-input" class="form-control" placeholder="Apply Promo Code"
+                                value="stevekaku">
+                            <button id="apply-btn" class="btn btn-success">Apply</button>
                         </div>
                     </div>
                 </div>
             </section>
             <hr>
             <div class="my-2 mb-4 text-center">
-                <h3>Total: $ <span id="">1290</span></h3>
+                <h3>Total: $ <span id="final-price">1290</span></h3>
             </div>
         </section>
 
